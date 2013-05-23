@@ -1,0 +1,15 @@
+// Just add the compass css reset 
+@import "compass/reset";
+
+/* =========== Compass Sprite =========== */
+$icons-layout:horizontal; // sprite image layout
+@import "icons/*.png"; // "icons" is the name of you folder inside "images" folder
+@include all-icons-sprites; // generate the sprite with the class "icons"
+
+// Style of the icon container
+ul>li{
+	// same width and height of the images (on the "icons" folder)
+	width: 32px; 
+	height: 32px;
+	display: inline-block;
+}
